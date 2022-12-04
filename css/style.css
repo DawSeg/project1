@@ -1,3 +1,181 @@
+/*Global*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1, 7px;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*Navigation*/
+.navigation {
+  color: yellow;
+  height: 650px;
+  background-image: url("https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?w=2000");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.links li {
+  margin: 15px;
+  list-style-type: none;
+}
+
+.splash {
+  text-align: center;
+  color: white;
+  position: absolute;
+  /*display: flex-block;
+  align-items: center;
+  justify-content: center;*/
+  height: 700px;
+  bottom: 30%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.splash h1 {
+  font-size: 66px;
+  margin-top: 0px;
+}
+
+.splash h3 {
+  font-size: 26px;
+  margin-bottom: 0px;
+}
+
+.splash-btn {
+  background: orange;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+
+/*Services*/
+/*.services {
+    h1 {
+        color: black;
+        text-align: center;
+    }
+}*/
+.services h1, p {
+  color: black;
+  text-align: center;
+}
+
+.services h1 {
+  padding-top: 100px;
+  font-size: 30px;
+}
+
+.box {
+  text-align: center;
+  color: black;
+  margin: 40px auto;
+  width: 300px;
+  background: white;
+  overflow-wrap: break-word;
+}
+
+.services-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services i {
+  font-size: 40px;
+  border: 5px solid yellow;
+  padding: 15px;
+  border-radius: 50%;
+  color: orange;
+}
+
+/*Portfolio*/
+.portfolio {
+  background: grey;
+}
+
+.box img {
+  width: 100%;
+  height: 300px;
+}
+
+.portfolio-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex: 33.333%;
+  width: 33.333%;*/
+  justify-content: center;
+}
+
+.portfolio h1 {
+  padding-top: 100px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
+/*footer*/
+.footer {
+  display: flex; /*inline*/
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.socials li {
+  font-size: 0;
+}
+
+.socials li i {
+  font-size: 20px;
+  margin: 15px;
+  color: white;
+  background: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxTQUFBO0FBRUE7RUFDSSxzQkFBQTtBQ0FKOztBREdBO0VBQ0ksU0FBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtBQ0FKOztBREdBO0VBQ0ksaUJBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtBQ0FKOztBREdBLGFBQUE7QUFFQztFQUNHLGFBQUE7RUFDQSxhQUFBO0VBQ0EsaUtBQUE7RUFDQSxzQkFBQTtFQUNBLDRCQUFBO0FDREo7O0FESUM7RUFDRyxhQUFBO0VBQ0EsZUFBQTtBQ0RKOztBRElBO0VBQ0ksa0JBQUE7RUFDQSxhQUFBO0VBQ0EsOEJBQUE7QUNESjs7QURJQTtFQUNJLHFCQUFBO0VBQ0EsWUFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLHFCQUFBO0FDREo7O0FESUE7RUFDSSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBOzsyQkFBQTtFQUdBLGFBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtFQUNBLDhCQUFBO0FDREo7O0FESUE7RUFDSSxlQUFBO0VBQ0EsZUFBQTtBQ0RKOztBRElBO0VBQ0ksZUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDUSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUNEUjs7QURJQSxXQUFBO0FBRUE7Ozs7O0VBQUE7QUFPQTtFQUNJLFlBQUE7RUFDQSxrQkFBQTtBQ0hKOztBRE1BO0VBQ0ksa0JBQUE7RUFDQSxlQUFBO0FDSEo7O0FETUE7RUFDSSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLHlCQUFBO0FDSEo7O0FETUE7RUFDSSxhQUFBO0VBQ0EsZUFBQTtFQUNBLHVCQUFBO0FDSEo7O0FETUE7RUFDSSxlQUFBO0VBQ0Esd0JBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0FDSEo7O0FETUEsWUFBQTtBQUVBO0VBQ0ksZ0JBQUE7QUNKSjs7QURPQTtFQUNJLFdBQUE7RUFDQSxhQUFBO0FDSko7O0FET0E7RUFDSSxhQUFBO0VBQ0EsZUFBQTtFQUNBO2tCQUFBO0VBRUEsdUJBQUE7QUNKSjs7QURPQTtFQUNJLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtBQ0pKOztBRE9BLFNBQUE7QUFFQTtFQUNJLGFBQUEsRUFBQSxTQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0VBQ0EsNkJBQUE7RUFDQSxZQUFBO0FDTEo7O0FEUUE7RUFDSSxZQUFBO0FDTEo7O0FEUUE7RUFDSSxlQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtBQ0xKOztBRFFBO0VBQ0ksYUFBQTtFQUNBLHVCQUFBO0FDTEo7O0FEUUE7RUFDSSxxQkFBQTtBQ0xKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
